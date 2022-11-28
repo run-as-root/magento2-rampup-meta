@@ -28,13 +28,29 @@
         "slevomat/coding-standard": "8.6.4",
         "vaimo/composer-patches": "5.1.0"
     },
+    "support": {
+        "run-as-root/magento2-prometheus-exporter": "*"
+    },
     "scripts": {
         "post-install-cmd": [
             "[ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../slevomat/coding-standard,../../magento/magento-coding-standard/, phpcs-ruleset.xml"
         ],
         "post-update-cmd": [
             "[ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../slevomat/coding-standard,../../magento/magento-coding-standard/, phpcs-ruleset.xml"
+        ],
+        "run_as_root:phpcs": "vendor/bin/phpcs --standard=Magento2 app/code app/design",
+        "run_as_root:phpcs-fixer": "vendor/bin/php-cs-fixer fix app/code",
+        "run_as_root:phpstan": "vendor/bin/phpstan analyse app --no-progress --memory-limit=-1",
+        "run_as_root:phpunit": "vendor/bin/phpunit -c phpunit.xml --coverage-clover 'reports/coverage/coverage.xml' --coverage-html=reports/coverage --log-junit reports/junit.xml --verbose",
+        "run_as_root:cache:watch": "vendor/bin/cache-clean.js config --watch",
+        "run_as_root:tests": [
+            "@phpcs",
+            "@phpstan",
+            "@phpunit"
         ]
+    },
+    "scripts-descriptions": {
+        "cache:watch": "Start a Cache Watcher to automatically cleans Magento 2 cache."
     },
     "minimum-stability": "dev"
 }
