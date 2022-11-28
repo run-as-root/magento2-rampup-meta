@@ -15,9 +15,7 @@
         "magepal/magento2-gmailsmtpapp": "2.9.0",
         "markshust/magento2-module-disabletwofactorauth": "2.0.1",
         "olegkoval/magento2-regenerate-url-rewrites": "1.6.0",
-        "semaio/magento2-configimportexport": "3.10.1"
-    },
-    "require-dev": {
+        "semaio/magento2-configimportexport": "3.10.1",
         "deployer/deployer": "7.0.2",
         "friendsofphp/php-cs-fixer": "3.13.0",
         "mage2tv/magento-cache-clean": "1.0.48",
