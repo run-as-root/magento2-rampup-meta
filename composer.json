@@ -1,7 +1,6 @@
 {
     "name": "run_as_root/magento2-rampup-meta",
     "description": "A Magento 2 composer meta package serving all the tools you want in every of your projects!",
-    "type": "metapackage",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +8,6 @@
             "email": "david@run-as-root.sh"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": "8.1.*",
         "magento/product-community-edition": "2.4.5-p1",
