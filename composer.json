@@ -17,7 +17,6 @@
         "olegkoval/magento2-regenerate-url-rewrites": "1.6.0",
         "semaio/magento2-configimportexport": "3.10.1",
         "deployer/deployer": "7.0.2",
-        "friendsofphp/php-cs-fixer": "2.16.10",
         "mage2tv/magento-cache-clean": "1.0.48",
         "magento/magento-coding-standard": "27",
         "phpmd/phpmd": "2.13.0",
