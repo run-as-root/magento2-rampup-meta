@@ -26,7 +26,8 @@
         "phpunit/phpunit": "9.5.25",
         "reach-digital/magento2-test-framework": "1.5.0",
         "sebastian/phpcpd": "6.0.3",
-        "slevomat/coding-standard": "6.4.1"
+        "slevomat/coding-standard": "8.6.4",
+        "vaimo/composer-patches": "5.1.0"
     },
     "scripts": {
         "post-install-cmd": [
