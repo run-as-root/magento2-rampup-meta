@@ -2,6 +2,7 @@
     "name": "run_as_root/magento2-rampup-meta",
     "description": "A Magento 2 composer meta package serving all the tools you want in every of your projects!",
     "license": "MIT",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "David Lambauer",
@@ -10,7 +11,7 @@
     ],
     "require": {
         "php": "8.1.*",
-        "magento/product-community-edition": "2.4.5-p1",
+        "magento/product-community-edition": "~2.4.5",
         "justbetter/magento2-sentry": "3.2.0",
         "magepal/magento2-gmailsmtpapp": "2.9.0",
         "markshust/magento2-module-disabletwofactorauth": "2.0.1",
@@ -27,6 +28,9 @@
         "sebastian/phpcpd": "6.0.3",
         "slevomat/coding-standard": "8.6.4",
         "vaimo/composer-patches": "5.1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     },
     "support": {
         "run-as-root/magento2-prometheus-exporter": "*"
